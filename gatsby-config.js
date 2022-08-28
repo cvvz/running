@@ -12,7 +12,7 @@ module.exports = {
       },
       {
         name: 'About',
-        url: 'https://cvvz.github.io/about/',
+        url: 'https://cvvz.github.io/aboutme/resume.pdf',
       },
     ],
   },
