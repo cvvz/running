@@ -10,8 +10,8 @@
 
     > 有的app里的历史运动数据，可以通过先导出gpx文件，放到GPX_OUT目录，再执行`python3 scripts/gpx_sync.py`一次性的导入到data.db中
 
-2. push到master分支这个行为则会触发gh-pages.yml中定义的workflow，这个workflow做的事情是根据第二步生成的数据和图片重新生成静态网页，然后将改动push 到gh-pages分支
+2. push到master分支这个行为则会触发gh-pages.yml中定义的workflow，这个workflow做的事情是根据第一步生成的数据和图片重新生成静态网页，然后将改动push 到gh-pages分支
 
-3. 通过在repo的settings -> pages中配置github pages从gh-pages分支生成，那么每次gh-pages分支发生变化时，就会触发这个流水线运行，生成并发布新的网页
+3. 通过在repo的settings -> pages中配置github pages从gh-pages分支生成，那么每次当gh-pages分支有新的推送时，就会触发这个流水线，生成并部署新的静态页面到running子页面下
 
 
