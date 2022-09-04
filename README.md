@@ -6,7 +6,11 @@
 
     > 拉取跑步数据需要调用对应app的api，api鉴权所需凭证存放在repo下的secrets设置中，作为环境变量提供给脚本
 
-    > 有些运动软件提供了api直接调用，比如keep可以通过手机号、密码直接拉取运动数据；而有些运动软件没有直接提供接口的话，需要先配置自动同步数据到strava，再调用strava的api拉取数据
+    > 有些运动软件提供了api直接调用，比如keep可以通过手机号、密码直接拉取运动数据；
+
+    > 而有些运动软件没有直接提供接口的话，需要先配置自动同步数据到strava，再调用strava的api拉取数据。[strava支持的运动app列表](https://www.strava.com/upload/device)
+
+    > strava 本身也是一个运动app，直接可以记录运动数据
 
     > 历史运动数据，可以通过先导出gpx文件，放到GPX_OUT目录，再执行`python3 scripts/gpx_sync.py`一次性的导入到data.db中
 
