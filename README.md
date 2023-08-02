@@ -12,8 +12,11 @@
 
 3. 通过在repo的settings -> pages中配置github pages从gh-pages分支生成，那么每次当gh-pages分支有更新时，就会自动触发[pages-build-deployment](https://github.com/cvvz/running/actions/workflows/pages/pages-build-deployment)流水线，生成并部署新的静态页面到指定domain下
 
+![image](https://github.com/cvvz/running/assets/44308864/7af935b6-7636-4836-986c-c9af56808c20)
+
 ### 历史数据导入
 
 历史运动数据，可以通过先导出gpx文件，放到GPX_OUT目录，再执行`python3 scripts/gpx_sync.py`一次性的导入到data.db中
+
 
 
